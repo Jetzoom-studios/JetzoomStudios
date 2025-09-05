@@ -1,0 +1,151 @@
+/* Reset some default styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, header, main, section, nav {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #2d0101;
+    color: #222;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+header {
+    background: #000000;
+    color: #fff;
+    padding: 32px 0 24px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+header img {
+    width: 1000;    /* Set the image width */
+    height: auto;    /* Keep the aspect ratio */
+    display: block;
+    margin: 0 auto 16px auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+header h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+main {
+    max-width: 800px;
+    margin: 32px auto;
+    padding: 0 16px;
+}
+
+section {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+    padding: 24px 20px;
+    margin-bottom: 28px;
+}
+
+h3 {
+    color: #1a237e;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+}
+
+ol, ul {
+    margin-left: 24px;
+    margin-bottom: 12px;
+}
+
+a {
+    color: #3949ab;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #0d133d;
+    text-decoration: underline;
+}
+
+.subscribe-button {
+    display: inline-block;
+    background: #ff5252;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 24px;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 10px;
+    box-shadow: 0 2px 8px rgba(255,82,82,0.12);
+    transition: background 0.2s, transform 0.2s;
+}
+
+.subscribe-button:hover {
+    background: #d32f2f;
+    transform: translateY(-2px) scale(1.04);
+}
+
+nav {
+    margin: 24px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 12px 8px 0;
+}
+
+nav a {
+    background: #e3e6fd;
+    color: #1a237e;
+    padding: 8px 18px;
+    border-radius: 18px;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover {
+    background: #1a237e;
+    color: #fff;
+}
+
+iframe {
+    display: block;
+    margin: 18px auto;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+@media (max-width: 600px) {
+    header img {
+        width: 120px;
+    }
+    main {
+        padding: 0 4vw;
+    }
+    section {
+        padding: 14px 6px;
+    }
+    nav li {
+        display: block;
+        margin: 8px 0;
+    }
+}
