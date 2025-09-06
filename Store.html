@@ -48,6 +48,7 @@
             { id: 1, title: "", price: 19.99, image: "Untitled Project (12).jpg" },
             { id: 2, title: "Sticker Pack", price: 7.99, image: "https://via.placeholder.com/220x140?text=Sticker+Pack" },
             { id: 3, title: "T-Shirt", price: 24.99, image: "https://via.placeholder.com/220x140?text=T-Shirt" },
+            { id: 4, title: "Avgeek Mug", price: 14.99, image: "https://jetzoomstudios.creator-spring.com/uploads/0e6e2e2e-7e2a-4e2e-8e2e-2e2e2e2e2e2e/preview/700x700.jpg" },
         ];
 
         const cart = {};
@@ -62,6 +63,15 @@
                             <div class="product-title">Smooth and Butter Landings AV</div>
                             <div class="product-price">$${product.price.toFixed(2)}</div>
                             <a class="add-cart" href="https://jetzoomstudios.creator-spring.com/listing/smooth-and-butter-landings-av" target="_blank" rel="noopener">Buy on Spring</a>
+                        </div>
+                    `;
+                } else if (product.id === 4) {
+                    return `
+                        <div class="product">
+                            <img src="cssroom/300 (1).jpg" alt="Avgeek Mug">
+                            <div class="product-title">Avgeek Mug</div>
+                            <div class="product-price">$${product.price.toFixed(2)}</div>
+                            <a class="add-cart" href="https://jetzoomstudios.creator-spring.com/listing/avgeek-mug" target="_blank" rel="noopener">Buy on Spring</a>
                         </div>
                     `;
                 } else {
